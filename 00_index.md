@@ -2,11 +2,7 @@
 ==================
 
 - [Что такое Grunt и зачем он нужен](http://github.com/ZIJ/grunt-workshop/blob/master/01_intro.md)
-- [Пример использования](http://github.com/ZIJ/grunt-workshop/blob/master/02_usage-example.md)
-  - Установка
-  - Файлы проекта
-  - Простой Gruntfile
-  - Файлы на выходе
+- [Простой пример использования](http://github.com/ZIJ/grunt-workshop/blob/master/02_usage-example.md)
 - Подробнее об установке
   - grunt-cli (глобальная установка)
   - package.json и devDependencies
