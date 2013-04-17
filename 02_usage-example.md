@@ -34,4 +34,7 @@ npm install grunt-contrib-uglify --save-dev
 npm install grunt-contrib-concat --save-dev
 ```
 
-Осталось самое главное - Gruntfile, в котором и будут описаны задачи
+Gruntfile
+---------
+
+Это обычный js-файл, в котором описано, чего же мы хотим от Grunt. До версии 0.4 он назывался grunt.js.
