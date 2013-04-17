@@ -7,9 +7,10 @@ Materials for my speech on Grunt.js at Frontend DEV Conf '13
 ------------------
 
 - [Что такое Grunt и зачем он нужен](http://github.com/ZIJ/grunt-workshop/blob/master/01_intro.md)
-- [Простой пример использования](http://github.com/ZIJ/grunt-workshop/blob/master/02_usage-example.md)
+- [Пример использования](http://github.com/ZIJ/grunt-workshop/blob/master/02_usage-example.md)
+  - установка  (используем ```grunt-cli``` и ```npm init```)
+  - простой Gruntfile (используем JSHint, concat и UglifyJS)
 - [Подробнее об установке Grunt](http://github.com/ZIJ/grunt-workshop/blob/master/03_installation.md)
-  - grunt-cli (глобальная установка)
   - package.json и devDependencies
   - grunt-init
 - Структура Gruntfile
