@@ -11,4 +11,11 @@
   - module.exports
   - initConfig()
   - loadNpmTasks() - загрузка установленных тасков
-  - registerTask() - алиасы
+  - registerTask() - алиасы, default
+- Таски
+  - Multi-tasks, targets
+  - Options
+  - Работа с файлами (форматы, фильтрация, шаблоны)
+  - Ещё раз об алиасах, registerTask() и registerMultiTask()
+  - Кастомные таски (доступ к параметрам, async(), запуск других, обработка ошибок)
+- Отличия между 0.3 и 0.4
