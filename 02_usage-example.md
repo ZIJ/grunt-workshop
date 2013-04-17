@@ -34,10 +34,10 @@ npm install grunt-contrib-uglify --save-dev
 npm install grunt-contrib-concat --save-dev
 ```
 
-Gruntfile
----------
+Gruntfile.js
+------------
 
-Это обычный js-файл, в котором описано, чего же мы хотим от Grunt. До версии 0.4 он назывался grunt.js.
+Это обычный js-файл, в котором описаны задачи и их параметры. До версии 0.4 назывался grunt.js.
 
 ```javascript
 module.exports = function(grunt){
@@ -71,3 +71,21 @@ module.exports = function(grunt){
 
 };
 ```
+
+Метод initConfig позволяет настроить нужные задачи. Затем мы эти задачи подгружаем с помощью метода loadNpmTasks() и регистрируем новую задачу с алиасом default, которая последовательно выполнит три предыдущих. Это позволяет вызвать grunt без параметров, и получить примерно такой лог в консоли:
+
+```
+$ grunt
+
+Running "jshint:all" (jshint) task
+>> 3 files lint free.
+
+Running "concat:dist" (concat) task
+File "main.js" created.
+
+Running "uglify:all" (uglify) task
+File "main.min.js" created.
+
+Done, without errors.
+```
+
