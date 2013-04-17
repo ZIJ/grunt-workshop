@@ -42,15 +42,13 @@ Gruntfile.js
 ```javascript
 module.exports = function(grunt){
 
-    var sources = 'src/*.js';
-
     grunt.initConfig({
         jshint: {
-            all: ['Gruntfile.js', sources]
+            all: ['Gruntfile.js', 'src/*.js']
         },
         concat: {
             dist: {
-                src: sources,
+                src: 'src/*.js',
                 dest: 'main.js'
             }
         },
