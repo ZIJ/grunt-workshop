@@ -18,7 +18,7 @@ Materials for my speech on Grunt.js at Frontend DEV Conf '13
   - initConfig()
   - loadNpmTasks() (загрузка установленных задач)
   - registerTask() (алиасы, default)
-- Разбираемся с тасками
+- [Задачи в деталях](http://github.com/ZIJ/grunt-workshop/blob/master/05_tasks.md)
   - Multi-tasks, targets
   - Options
   - Работа с файлами (форматы, фильтрация, шаблоны)
