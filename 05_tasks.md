@@ -1,5 +1,8 @@
+Задачи в деталях
+================
+
 Типы задач
-===================
+----------
 
 В Grunt их 2: basic tasks и multi tasks. Первые - это либо псевдоним (alias) для одной или нескольких других задач, либо функция пользовательской задачи:
 
@@ -71,3 +74,8 @@ grunt.initConfig({
 grunt.registerTask('debug', ['jshint:debug', 'concat:debug', 'uglify:debug']);
 grunt.registerTask('release', ['jshint:release', 'concat:release', 'uglify:release']);
 ```
+
+Работа с файлами
+----------------
+
+
