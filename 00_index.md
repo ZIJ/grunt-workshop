@@ -2,7 +2,7 @@
 ==================
 
 - [Что такое Grunt и зачем он нужен](http://github.com/ZIJ/grunt-workshop/blob/master/01_intro.md)
-- Минимальный пример использования
+- [Пример использования](http://github.com/ZIJ/grunt-workshop/blob/master/02_usage-example.md)
   - Установка
   - Файлы проекта
   - Простой Gruntfile
