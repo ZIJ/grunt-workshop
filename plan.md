@@ -12,10 +12,25 @@
   - initConfig()
   - loadNpmTasks() - загрузка установленных тасков
   - registerTask() - алиасы, default
-- Таски
+- Разбираемся с тасками
   - Multi-tasks, targets
   - Options
   - Работа с файлами (форматы, фильтрация, шаблоны)
   - Ещё раз об алиасах, registerTask() и registerMultiTask()
-  - Кастомные таски (доступ к параметрам, async(), запуск других, обработка ошибок)
+  - Кастомные таски (доступ к параметрам, async(), запуск других, обработка ошибок
+- Cтандартные таски
+  - О библиотеке grunt-contrib
+  - jshint
+  - uglify
+  - concat
+  - qunit
+  - watch
+- Другие таски из grunt-contrib
+  - clean, copy, compress
+  - coffee
+  - csslint и сssmin
+  - less, sass и stylus
+  - jasmine и nodeunit
+  - handlebars, jade, jst
+  - requireJS
 - Отличия между 0.3 и 0.4
