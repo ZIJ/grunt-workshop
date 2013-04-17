@@ -9,7 +9,45 @@ grunt.registerTask('myAliasTask', ['jshint', 'concat', 'uglify']);
 
 ```javascript
 grunt.registerTask('myCustomTask', 'Logs current task name', function(){
-  grunt.log.writeln('Current task name: ' + this.name);
+  grunt.log.writeln(' Current task name: ' + this.name);
 });
 ```
+Вторая задача пишет в консоль своё название.
+
 Multi tasks отличаются от обычных тем, что поддерживают цели (targets) - независимые наборы параметров. Если при вызове не будет явно указана цель, то задача будет выполнена для всех целей по очереди. Для создания такой задачи предназначен метод ```registerMultiTask()```:
+
+```javascript
+grunt.registerMultiTask('myMultiTask', function(){
+  grunt.log.writeln(' Target: ' + this.target + ' Data: ' + this.data); 
+});
+```
+
+А эта - цель, дла которой была вызвана, и параметры. Вот как это может выглядеть:
+
+```javascript
+grunt.initConfig({
+    myMultiTask: {
+        first: 'Single string',
+        second: [1, 2, 3]
+    }
+});
+```
+
+```
+$ grunt myMultiTask:first
+Running "myMultiTask:first" (myMultiTask) task
+ Target: first Data: Single string
+Done, without errors.
+
+$ grunt myMultiTask:second
+Running "myMultiTask:second" (myMultiTask) task
+ Target: second Data: 1,2,3
+Done, without errors.
+
+$ grunt myMultiTask
+Running "myMultiTask:first" (myMultiTask) task
+ Target: first Data: Single string
+Running "myMultiTask:second" (myMultiTask) task
+ Target: second Data: 1,2,3
+Done, without errors.
+```
