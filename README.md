@@ -2,3 +2,40 @@ grunt-workshop
 ==============
 
 Materials for my speech on Grunt.js at Frontend DEV Conf '13
+
+Содержание доклада
+------------------
+
+- [Что такое Grunt и зачем он нужен](http://github.com/ZIJ/grunt-workshop/blob/master/01_intro.md)
+- [Простой пример использования](http://github.com/ZIJ/grunt-workshop/blob/master/02_usage-example.md)
+- Подробнее об установке
+  - grunt-cli (глобальная установка)
+  - package.json и devDependencies
+  - grunt-init
+- Структура Gruntfile
+  - module.exports
+  - initConfig()
+  - loadNpmTasks() - загрузка установленных тасков
+  - registerTask() - алиасы, default
+- Разбираемся с тасками
+  - Multi-tasks, targets
+  - Options
+  - Работа с файлами (форматы, фильтрация, шаблоны)
+  - Ещё раз об алиасах, registerTask() и registerMultiTask()
+  - Кастомные таски (доступ к параметрам, async(), запуск других, обработка ошибок)
+- Cтандартные таски
+  - О библиотеке grunt-contrib
+  - jshint
+  - uglify
+  - concat
+  - qunit
+  - watch
+- Другие таски из grunt-contrib
+  - clean, copy, compress
+  - coffee
+  - csslint и сssmin
+  - less, sass и stylus
+  - jasmine и nodeunit
+  - handlebars, jade, jst
+  - requireJS
+- Отличия между 0.3 и 0.4
