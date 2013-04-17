@@ -30,4 +30,10 @@ grunt-init для быстрого создания проектов
 npm install -g grunt-init
 ```
 
-Теперь установим
+Шаблоны проще всего устанавливать напрямую с GitHub в папку ```~/.grunt-init```:
+
+```
+git clone git@github.com:gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+```
+
+
