@@ -13,23 +13,14 @@ npm uninstall -g grunt
 npm install -g grunt-cli
 ```
 
-Теперь опишем все зависимости в package.json:
-
-```javascript
-{
-  "name": "grunt-usage-example",
-  "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.4.3",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-concat": "~0.2.0"
-  }
-}
-```
-
-И установим их:
+Теперь установим нужные модули (npm init создаст package.json, а флаг --save-dev запишет туда зависимости):
 
 ```bash
-npm install
+npm init
+npm install grunt --save-dev
+npm install grunt-contrib-jshint --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-contrib-concat --save-dev
 ```
+
+Осталось самое главное - Gruntfile, в котором и будут описаны задачи
