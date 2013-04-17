@@ -30,10 +30,15 @@ grunt-init для быстрого создания проектов
 npm install -g grunt-init
 ```
 
-Шаблоны проще всего устанавливать напрямую с GitHub в папку ```~/.grunt-init```:
+Шаблоны проще всего устанавливать напрямую с GitHub в папку ```~/.grunt-init```
 
 ```
-git clone git@github.com:gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+git clone git@github.com:gruntjs/grunt-init-jquery.git ~/.grunt-init/jquery
 ```
 
+Теперь можно быстро создать проект по шаблону (в данном случае плагин к jQuery):
+
+```
+grunt-init jquery
+```
 
