@@ -13,11 +13,11 @@ Materials for my speech on Grunt.js at Frontend DEV Conf '13
 - [Подробнее об установке Grunt](http://github.com/ZIJ/grunt-workshop/blob/master/03_installation.md)
   - package.json и devDependencies
   - grunt-init
-- Структура Gruntfile
+- [Структура Gruntfile](http://github.com/ZIJ/grunt-workshop/blob/master/04_gruntfile.md)
   - module.exports
   - initConfig()
-  - loadNpmTasks() - загрузка установленных тасков
-  - registerTask() - алиасы, default
+  - loadNpmTasks() (загрузка установленных задач)
+  - registerTask() (алиасы, default)
 - Разбираемся с тасками
   - Multi-tasks, targets
   - Options
