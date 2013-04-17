@@ -13,7 +13,7 @@ npm uninstall -g grunt
 npm install -g grunt-cli
 ```
 
-Теперь создадим вот такой package.json:
+Теперь опишем все зависимости в package.json:
 
 ```javascript
 {
@@ -26,4 +26,10 @@ npm install -g grunt-cli
     "grunt-contrib-concat": "~0.2.0"
   }
 }
+```
+
+И установим их:
+
+```bash
+npm install
 ```
