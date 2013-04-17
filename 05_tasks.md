@@ -51,3 +51,23 @@ Running "myMultiTask:second" (myMultiTask) task
  Target: second Data: 1,2,3
 Done, without errors.
 ```
+
+Почти все стандартные задачи являются multi tasks, что позволяет, например, легко описать сборку для отладки и релиза с различными параметрами:
+
+```javascript
+grunt.initConfig({
+    jshint: {
+        debug: {
+          // Debug options 
+        },
+        release: {
+          // Release options
+        }
+    }
+    // ... 
+    // Same for concat and uglify    
+});
+
+grunt.registerTask('debug', ['jshint:debug', 'concat:debug', 'uglify:debug']);
+grunt.registerTask('release', ['jshint:release', 'concat:release', 'uglify:release']);
+```
