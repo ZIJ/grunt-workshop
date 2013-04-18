@@ -157,6 +157,29 @@ errorCount: 1
 target: first
 ```
 
+С асинхронными операциями помоает работать метод ```async```. Задача не будет считатьcя выполненной, пока не будет вызвана функция, которую он возвращает:
+
+```javascript
+grunt.registerTask('asyncTask', function() {
+    var done = this.async();
+    console.time('Completed in ');
+    setTimeout(function(){
+        console.timeEnd('Completed in ');
+        done();
+    }, 1000);
+});
+```
+
+```
+$ grunt asyncTask
+
+Running "asyncTask" task
+Completed in : 1002ms
+
+Done, without errors.
+```
+
+
 Внутри задач можно запускать другие задачи с помощью метода ```run```, который принимает массив или список названий задач:
 
 ```javascript
