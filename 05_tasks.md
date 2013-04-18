@@ -83,11 +83,14 @@ grunt.registerTask('release', ['jshint:release', 'concat:release', 'uglify:relea
 ```javascript
 grunt.initConfig({
     myTask: {
-        target1: {
-          
+        target1: {  // сompact
+          src: ['src/header.txt', 'src/*.js'],
+          dest: 'main.js'
         },
-        target2: {
-          
+        target2: {  // files object
+          files: {
+            'main.js': ['src/header.txt', 'src/*.js']  
+          }  
         },
         target3: {
           
@@ -95,5 +98,3 @@ grunt.initConfig({
     }
 });
 ```
-
-
