@@ -83,11 +83,48 @@ grunt.registerTask('release', ['jshint:release', 'concat:release', 'uglify:relea
 ```javascript
 grunt.initConfig({
     myTask: {
-        target1: {  // сompact
+        myTarget: {  // сompact format
           src: ['src/header.txt', 'src/*.js'],
           dest: 'main.js',
           nonull: true
         }
+    }
+});
+```
+
+Второй способ - через объект ```files```, имена свойств которого определяют выходные файлы, а значения - набор входных. Дополнительные параметры не поддерживаются:
+
+```javascript
+grunt.initConfig({
+    myTask: {
+        myTarget: {  // files object format
+          files: {
+            'main.js': ['src/header.txt', 'src/*.js'],
+            'libs.js': ['lib/*.js']
+          }  
+        }
+    }
+});
+```
+
+Третий, наиболее громоздкий и при этом гибкий - c помощью массива ```files```. Можно указывать несколько групп соответсвия выходного файла набору входных со своими параметрами:
+
+```javascript
+grunt.initConfig({
+    myTask: {
+        myTarget: {  // files array format
+          files: [
+            {
+              src: ['src/header.txt', 'src/*.js'],
+              dest: 'main.js',
+              nonull: true
+            }, {
+              src: ['lib/*.js'],
+              dest: 'libs.js'
+            }  
+          ]  
+        }
+    }
 });
 ```
 
