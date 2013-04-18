@@ -58,6 +58,25 @@ module.exports = function(grunt){
 ```
 
 ```javascript
+jshint: {
+    all: ['Gruntfile.js', 'src/*.js']
+},
+concat: {
+    dist: {
+        src: 'src/*.js',
+        dest: 'main.js'
+    }
+},
+uglify: {
+    all: {
+        files: {
+            'main.min.js': ['main.js']
+        }
+    }
+}
+```
+
+```javascript
 module.exports = function(grunt){
 
     grunt.initConfig({
