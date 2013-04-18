@@ -21,8 +21,8 @@ Materials for my speech on Grunt.js at Frontend DEV Conf '13
 - [Задачи в деталях](http://github.com/ZIJ/grunt-workshop/blob/master/05_tasks.md)
   - Типы задач (basic tasks, multi tasks)
   - Создание задач (registerTask() и registerMultiTask())
-  - Пользовательские задачи
   - Целевые файлы (форматы, обобщающие паттерны)
+  - Task API (полезные свойства, обработка ошибок, async, requires, requiresConfig) 
 - Cтандартные таски
   - О библиотеке grunt-contrib
   - jshint
