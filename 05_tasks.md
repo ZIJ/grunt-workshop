@@ -147,6 +147,7 @@ grunt.registerMultiTask('myMultiTask', function(){
 
 ```
 $ grunt myMultiTask:first:second
+
 Running "myMultiTask:first:second" (myMultiTask) task
 >> Something went wrong
 name: myMultiTask
