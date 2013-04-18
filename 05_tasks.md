@@ -78,4 +78,22 @@ grunt.registerTask('release', ['jshint:release', 'concat:release', 'uglify:relea
 Работа с файлами
 ----------------
 
+Есть 3 способа указать список файлов для данной цели: краткий, через объект ```files``` или одноимённый массив:
+
+```javascript
+grunt.initConfig({
+    myTask: {
+        target1: {
+          
+        },
+        target2: {
+          
+        },
+        target3: {
+          
+        }
+    }
+});
+```
+
 
