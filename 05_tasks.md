@@ -78,7 +78,18 @@ grunt.registerTask('release', ['jshint:release', 'concat:release', 'uglify:relea
 Работа с файлами
 ----------------
 
-Есть 3 способа указать список файлов для данной цели: краткий, через объект ```files``` или одноимённый массив:
+Проще всего определить список целевых файлов в сокращённом формате. Результирующий файл только один, но можно указывать дополнительные параметры кроме стандартных ```src``` и ```dest```:
+
+```javascript
+grunt.initConfig({
+    myTask: {
+        target1: {  // сompact
+          src: ['src/header.txt', 'src/*.js'],
+          dest: 'main.js',
+          nonull: true
+        }
+});
+```
 
 ```javascript
 grunt.initConfig({
