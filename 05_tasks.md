@@ -133,5 +133,26 @@ grunt.initConfig({
 Task API
 --------
 
-Контекст функции задачи содержит много полезных свойств - имя задачи, аргументы, настройки. Внутри Multi task к этому добавляется текущая цель и список файлов, приведенный к формату массива:
+Контекст функции задачи содержит много полезных свойств - имя задачи, аргументы, настройки. Внутри Multi task к ним добавляется текущая цель:
+
+```javascript
+grunt.registerMultiTask('myMultiTask', function(){
+    var task = this;
+    grunt.log.error('Something went wrong');  // this will increase errorCount
+    ['name', 'nameArgs', 'args', 'errorCount', 'target'].forEach(function(propName){
+        grunt.log.writeln(propName + ': ' + task[propName]);
+    });
+});
+```
+
+```
+$ grunt myMultiTask:first:second
+Running "myMultiTask:first:second" (myMultiTask) task
+>> Something went wrong
+name: myMultiTask
+nameArgs: myMultiTask:first:second
+args: second
+errorCount: 1
+target: first
+```
 
