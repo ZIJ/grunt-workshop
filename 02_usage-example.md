@@ -62,17 +62,10 @@ jshint: {
     all: ['Gruntfile.js', 'src/*.js']
 },
 concat: {
-    dist: {
-        src: 'src/*.js',
-        dest: 'main.js'
-    }
+    dist: { src: 'src/*.js', dest: 'main.js' }
 },
 uglify: {
-    all: {
-        files: {
-            'main.min.js': ['main.js']
-        }
-    }
+    all: { files: { 'main.min.js': ['main.js'] } }
 }
 ```
 
