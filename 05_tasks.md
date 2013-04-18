@@ -85,15 +85,26 @@ grunt.initConfig({
     myTask: {
         target1: {  // сompact
           src: ['src/header.txt', 'src/*.js'],
-          dest: 'main.js'
+          dest: 'main.js',
+          nonull: true
         },
         target2: {  // files object
           files: {
-            'main.js': ['src/header.txt', 'src/*.js']  
+            'main.js': ['src/header.txt', 'src/*.js'],
+            'libs.js': ['lib/*.js']
           }  
         },
-        target3: {
-          
+        target3: {  // files array
+          files: [
+            {
+              src: ['src/header.txt', 'src/*.js'],
+              dest: 'main.js',
+              nonull: true
+            }, {
+              src: ['lib/*.js'],
+              dest: 'libs.js'
+            }  
+          ]  
         }
     }
 });
