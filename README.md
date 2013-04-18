@@ -19,11 +19,10 @@ Materials for my speech on Grunt.js at Frontend DEV Conf '13
   - loadNpmTasks() (загрузка установленных задач)
   - registerTask() (алиасы, default)
 - [Задачи в деталях](http://github.com/ZIJ/grunt-workshop/blob/master/05_tasks.md)
-  - Multi-tasks, targets
-  - Options
-  - Работа с файлами (форматы, фильтрация, шаблоны)
-  - Ещё раз об алиасах, registerTask() и registerMultiTask()
-  - Кастомные таски (доступ к параметрам, async(), запуск других, обработка ошибок)
+  - Типы задач (basic tasks, multi tasks)
+  - Создание задач (registerTask() и registerMultiTask())
+  - Пользовательские задачи
+  - Целевые файлы (форматы, обобщающие паттерны)
 - Cтандартные таски
   - О библиотеке grunt-contrib
   - jshint
