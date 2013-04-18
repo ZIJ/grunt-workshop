@@ -157,3 +157,11 @@ errorCount: 1
 target: first
 ```
 
+Внутри задач можно запускать другие задачи с помощью метода ```run```, который принимает массив или список названий задач:
+
+```javascript
+grunt.registerTask('myTask', function() {
+  grunt.task.run('foo', 'bar');
+  grunt.task.run(['bar', 'baz']);
+});
+```
