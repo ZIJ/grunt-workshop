@@ -43,6 +43,24 @@ Gruntfile.js
 module.exports = function(grunt){
 
     grunt.initConfig({
+        
+        //task settings go here
+        
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+
+};
+```
+
+```javascript
+module.exports = function(grunt){
+
+    grunt.initConfig({
         jshint: {
             all: ['Gruntfile.js', 'src/*.js']
         },
