@@ -114,14 +114,8 @@ grunt.initConfig({
     myTask: {
         myTarget: {  // files array format
           files: [
-            {
-              src: ['src/header.txt', 'src/*.js'],
-              dest: 'main.js',
-              nonull: true
-            }, {
-              src: ['lib/*.js'],
-              dest: 'libs.js'
-            }  
+            { src: ['src/header.txt', 'src/*.js'], dest: 'main.js', nonull: true },
+            { src: ['lib/*.js'], dest: 'libs.js' }  
           ]  
         }
     }
