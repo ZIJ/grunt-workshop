@@ -18,6 +18,10 @@ module.exports = function(grunt){
                     'main.min.js': ['main.js']
                 }
             }
+        },
+        myMultiTask: {
+            first: 'Single string',
+            second: [1, 2, 3]
         }
     });
 
@@ -26,5 +30,15 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+
+    grunt.registerTask('asyncTask', function() {
+        var done = this.async();
+        console.time('Completed in ');
+        setTimeout(function(){
+            console.timeEnd('Completed in ');
+            done();
+        }, 1000);
+    });
+
 
 };
