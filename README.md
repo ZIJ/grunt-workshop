@@ -8,7 +8,7 @@ My talk on Grunt.js at [Frontend DEV Conf '13](http://fdc.itstaff.by/)
 - Task types and setup concepts, custom tasks creation
 - Most useful parts of the Task API.
 
-Presentation (.pptx and PDF) is located in /slides folder
+Look for presentation (.pptx and PDF)  in ```/slides``` folder
 
 Содержание доклада
 ------------------
