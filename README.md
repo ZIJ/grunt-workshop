@@ -3,6 +3,8 @@ grunt-workshop
 
 My talk on Grunt.js at [Frontend DEV Conf '13](http://fdc.itstaff.by/)
 
+Presentation (.pptx and PDF) is located in /slides folder
+
 Содержание доклада
 ------------------
 
