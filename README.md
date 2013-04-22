@@ -1,7 +1,7 @@
 grunt-workshop
 ==============
 
-Materials for my speech on Grunt.js at Frontend DEV Conf '13
+Materials for my speech on Grunt.js at [Frontend DEV Conf '13](http://fdc.itstaff.by/)
 
 Содержание доклада
 ------------------
