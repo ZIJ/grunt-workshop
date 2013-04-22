@@ -3,6 +3,11 @@ grunt-workshop
 
 My talk on Grunt.js at [Frontend DEV Conf '13](http://fdc.itstaff.by/)
 
+- A brief introduction into what Grunt is and what can be used for
+- Installation overview and basics of project scaffolding
+- Task types and setup concepts, custom tasks creation
+- Most useful parts of the Task API.
+
 Presentation (.pptx and PDF) is located in /slides folder
 
 Содержание доклада
