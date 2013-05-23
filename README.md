@@ -9,6 +9,7 @@ My talk on Grunt.js at [Frontend DEV Conf '13](http://fdc.itstaff.by/)
 - Most useful parts of the Task API.
 
 Presentation: [http://www.slideshare.net/FDConf/javascript-grunt](http://www.slideshare.net/FDConf/javascript-grunt)
+
 Video: [http://video.yandex.by/users/fdconf/view/11/](http://video.yandex.by/users/fdconf/view/11/)
 
 Содержание доклада
