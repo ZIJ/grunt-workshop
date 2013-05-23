@@ -8,7 +8,8 @@ My talk on Grunt.js at [Frontend DEV Conf '13](http://fdc.itstaff.by/)
 - Task types and setup concepts, custom tasks creation
 - Most useful parts of the Task API.
 
-Look for presentation (.pptx and PDF)  in ```/slides``` folder
+Presentation: [http://www.slideshare.net/FDConf/javascript-grunt](http://www.slideshare.net/FDConf/javascript-grunt)
+Video: [http://video.yandex.by/users/fdconf/view/11/](http://video.yandex.by/users/fdconf/view/11/)
 
 Содержание доклада
 ------------------
@@ -29,7 +30,11 @@ Look for presentation (.pptx and PDF)  in ```/slides``` folder
   - Типы задач (basic tasks, multi tasks)
   - Создание задач (registerTask() и registerMultiTask())
   - Целевые файлы (форматы, обобщающие паттерны)
-  - Task API (полезные свойства, обработка ошибок, async, requires, requiresConfig) 
+  - Task API (полезные свойства, обработка ошибок, async, requires, requiresConfig)
+
+Other topics
+------------
+
 - Cтандартные таски
   - О библиотеке grunt-contrib
   - jshint
